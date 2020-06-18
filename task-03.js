@@ -17,7 +17,7 @@ const images = [
 ];
 
 const createGallery = ({ url, alt }) =>
-  `<li><img src = ${url} alt = ${alt} width = 250 height = 150</li>`;
+  `<li><img src = ${url} alt = ${alt} width = 250 height = 150></li>`;
 const galleryMarkup = images.reduce(
   (acc, item) => acc + createGallery(item),
   '',
